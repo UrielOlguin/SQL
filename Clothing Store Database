@@ -1,0 +1,28 @@
+# Uriel Olguin"s SQL Portfolio
+
+## Welcome to my SQL Portfolio! This code repository contains examples of SQL I've written. Feel Free to take a look and reach 
+out via email if you have any questions: urielolguin@me.com
+
+
+CREATE TABLE clothes (id INTEGER PRIMARY KEY, name TEXT,size TEXT, price INTEGER,quantity INTEGER);
+INSERT INTO clothes Values (1,"white shirt","medium",10,30);
+INSERT INTO clothes Values (2,"white shirt","large",10,32);
+INSERT INTO clothes Values (3,"black shirt","medium",10,33);
+INSERT INTO clothes Values (4,"black shirt","large",10,31);
+INSERT INTO clothes Values (5,"blue jeans","medium",12,20);
+INSERT INTO clothes Values (6,"blue jeans","large",12,22);
+INSERT INTO clothes Values (7,"black jeans","medium",12,16);
+INSERT INTO clothes Values (8,"black jeans","large",12,16);
+INSERT INTO clothes Values (9,"grey joggers","one-size-fits-all",15,8);
+INSERT INTO clothes Values (10,"khaki joggers","one-size-fits-all",15,10);
+INSERT INTO clothes Values (11,"grey sweatshirt","large",10,12);
+INSERT INTO clothes Values (12,"navy sweatshirt","large",10,13);
+INSERT INTO clothes Values (13,"black snapback","one-size-fits-all",11,8);
+INSERT INTO clothes Values (14,"navy snapback","one-size-fits-all",11,9);
+INSERT INTO clothes Values (15,"black backpack","one-size-fits-all",17,7);
+SELECT * FROM clothes;
+
+SELECT SUM(quantity) as total_Inventory FROM clothes;
+
+SElECT name,size,price FROM clothes WHERE price
+ORDER BY price DESC;
