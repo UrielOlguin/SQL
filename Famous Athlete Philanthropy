@@ -1,0 +1,24 @@
+CREATE TABLE famous_athlete (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, birthdate INTEGER, sport TEXT);
+
+INSERT INTO famous_athlete (name, birthdate, sport) VALUES 
+("Lebron James", 1984, "Basketball"),
+("JJ Watt", 1989, "Football"),
+("Serena Williams", 1981,"Tennis"),
+("Tiger Woods", 1975, "Golf"),
+("David Beckham", 1975,"Soccer"),
+("Derek Jeter",1974,"BaseBall");
+
+SELECT * FROM famous_athlete;
+
+CREATE TABLE philanthropy (id INTEGER PRIMARY KEY AUTOINCREMENT, program TEXT, funds_raised INTEGER);
+
+INSERT INTO philanthropy(program, funds_raised) VALUES ("LeBron James Family Foundation", 41000000),
+("Hurricane Harvey",37000000),
+("Serena Williams Fund",111000000),
+("Tiger Woods Foundation",30000000),
+("Ukraine Refugees",1800000),
+("Turn 2 Foundation",1000000);
+
+SELECT * FROM philanthropy ORDER BY program DESC;
+
+SELECT famous_athlete.name, philanthropy.program FROM famous_athlete JOIN philanthropy ON famous_athlete.id = philanthropy.id;
