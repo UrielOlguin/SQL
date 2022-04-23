@@ -22,3 +22,4 @@ INSERT INTO philanthropy(program, funds_raised) VALUES ("LeBron James Family Fou
 SELECT * FROM philanthropy ORDER BY program DESC;
 
 SELECT famous_athlete.name, philanthropy.program FROM famous_athlete JOIN philanthropy ON famous_athlete.id = philanthropy.id;
+
